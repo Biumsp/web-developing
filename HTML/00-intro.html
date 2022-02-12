@@ -87,7 +87,79 @@
 
     </div>
 
+    <div>
+        <h2>Lists</h2>
+        <p>
+            You can create unordered lists:
+        <ul>
+            <li>First element</li>
+            <li>Second element</li>
+            <li>Third element</li>
+        </ul>
 
+        And ordered lists:
+        <ol>
+            <li>First element</li>
+            <li>Second element</li>
+            <li>Third element</li>
+        </ol>
+
+        And inside the points of the list you can
+        nest a list, or make things bold...
+        <ul>
+            <li>First class
+                <ul>
+                    <li>1.1 element</li>
+                    <li>1.2 element</li>
+                </ul>
+            </li>
+            <li>
+                Second class
+                <ul>
+                    <li>2.1 element</li>
+                    <li>2.2 element</li>
+                </ul>
+            </li>
+        </ul>
+        </p>
+    </div>
+
+    <div>
+        <h2>Anchor tag</h2>
+        <p>
+            We can insert hyperlinks using the anchor tag, like
+            <a href="https://www.google.com">this</a>.
+            They need an attribute, href, that tells where to go.
+        </p>
+        <p>
+            So yes, elements can have attributes.
+            Inside the attribute we need to specify "http" or "https", to tell it to use the http protocol.
+            When reading, we are using the file protocol, not http protocol.
+        </p>
+        <p>
+            We can also link one page to <a href="01-semantics.html">another</a>, inside my local file system.
+        </p>
+    </div>
+    <!-- I can include comments -->
+    <!-- In VS Code is ctrl+k+c to comment and ctrl+k+u to uncomment -->
+    <div>
+        <h2>Images</h2>
+        <p>
+            It does not have an opening <b>and</b> closing tag. We only have one tag.
+            We just provide a location for the image.
+            It has an attribute src, with the location.
+        </p>
+        <img src="https://www.thermal-engineering.org/wp-content/uploads/2019/05/Navier-Stokes-Equations-definition.png"
+            alt="Just an image">
+        <p>
+            Another very important attribute of img is "alt". It contains
+            a description of the image, for accessibility and screen readers.
+            It is also what is displayed if the image is not available.
+        </p>
+        <p>
+            The width and height of th images should be controlled using CSS.
+        </p>
+    </div>
 </body>
 
 </html>

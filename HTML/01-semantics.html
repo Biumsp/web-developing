@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h2>What is HTML5?</h2>
+        <p>It is not a version. It is the latest evolution of the standard that defines HTML.
+            It is a version of the language and the newest set of technology related to HTML.
+            Like stuff for css, or 3d graphics... a lot of thing.
+            There is a standard because there is not one official version, there exists only the
+            rules of HTML, and every browser implements some HTML interpreter based on that standard.
+        </p>
+        <p>
+            The declaration we put on the top is to tell the browser that we are using
+            HTML5 semantics, elements, standards...
+        </p>
+    </div>
+    <div>
+        <h2>Inline vs. Block elements</h2>
+        <p>
+            This terms refer to how a given element fits in with the flow
+            of content in the document.
+        </p>
+        <p>
+            Paragraphs are block elements: they take up a whole block (you get a new line after them).
+        </p>
+        <p>
+            Anchor tags, images.. are inline elements: they don't take up a whole line.
+        </p>
+        <p>
+            We can change this behavior using CSS.
+        </p>
+    </div>
+    <div>
+        <h2>Div</h2>
+        <p>
+        <ul>
+            <li>
+                It is a generic container to group things together.
+            </li>
+            <li>
+                It is a block element
+            </li>
+            <li>
+                It is a way to style things together using CSS
+            </li>
+        </ul>
+        </p>
+    </div>
+    <div>
+        <h2>Spans</h2>
+        <p>
+            <span>
+                Spans are also grouping elements, like divs, but
+                they are inline elements.
+            </span>
+            <span>
+                So, they will take up as little space as possible.
+            </span>
+            They are very useful, for example, to style text in between a paragraph.
+            If I want to change the color of some words, I can use a span to wrap them.
+        </p>
+    </div>
+    <div>
+        <h2>Other various elements</h2>
+        <h3>The horizontal break</h3>
+        <p>
+            It is just a way to insert a break
+        </p>
+        <hr>
+        <h3>The line break</h3>
+        <p>
+            It is useful basically only inside a paragraph,<br>
+            If you need <br>
+            To have a line break <br>
+            Whenever you want <br>
+            Without using a series of paragraphs
+        </p>
+        <h3>Superscript and Subscript</h3>
+        They are very useful<sub>1</sub>, you know it<sup>[2]</sup>
+        They can have an ID, and this is also useful.
+        Inside we can also use an anchor tag (like wikipedia does).
+    </div>
+    <div>
+        <h2>HTML Entities</h2>
+        <p>There are characters that are reserved for HTML, or
+            they are too complex to type.
+        </p>
+        <p>
+            They all start with &#38;&#35; and end with &#59; <br> with a number in between.
+            We also have another syntax, where we have some text in place of the number: in this case there is no
+            hashtag.
+            You can find a list <a href="https://unicode-table.com/en/html-entities/">here</a>
+        </p>
+        <p>
+            For example:
+        <ul>
+            <li>The less than will have "lt" as text: &lt;</li>
+            <li>The greater than will have "gt" as text: &gt;</li>
+            <li>The ampersand will have "amp" as text: &amp;</li>
+        </ul>
+        </p>
+    </div>
+
+    <div>
+        <h2>Semantic Markup</h2>
+        <p>
+            It is the concept of writing the html structure in a meaningful way.
+            For example, using divs for every grouping, is terrible. There are more meaningful
+            elements with the exact same functionalities.
+            For example:
+        <ul>
+            <li>nav: for navigation bar</li>
+            <li>footer and header</li>
+            <li>main element</li>
+            <li>section: exactly like a div</li>
+        </ul>
+        It matters to help websites crawlers and for accessibility.
+        There are also elements equivalent to nav or paragraph (p), but with a
+        different and more meaningful name.
+        </p>
+    </div>
+    <div>
+        <h2>"Main" element</h2>
+        <p>The content of the main element should be unique to a document.
+            Content that is repeated across multiple pages should not be
+            included (like nav bars, logos, forms...).
+        </p>
+    </div>
+    <div>
+        <h2>Nav element</h2>
+        <p>Used to group sections with navigation links</p>
+    </div>
+    <section>
+        <h2>Section element</h2>
+        <p>This rapresents a standalone section of a document. It is used for sections that have not
+            a more specific meaning than "section".
+        </p>
+    </section>
+    <section>
+        <h2>Aside element</h2>
+        <p>Something that is not strictly needed in the
+            main part of the document. It is kind of a side note, or a side element..
+        </p>
+    </section>
+    <section>
+        <h2>Time element</h2>
+        <p>An inline element that is used to call something out as "time" in a machine readable format</p>
+    </section>
+</body>
+
+</html>

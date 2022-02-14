@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+
+<body>
+
+    <main>
+        <h1>Tables</h1>
+        <section>
+            <p>A 2D way to display some content.
+                It doesn't need to be text. The teachers' cards in superprof are displayed in a table-linke way
+            </p>
+            <p>
+                The elements are "td" for a cell, "tr" for table rows, "th" for the headers.
+                We can also divide the header's rows from the body's and the footer's.
+                We use thead, tbody and tfoot.
+            </p>
+            <h2>An example of a table</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Animal</th>
+                        <th>Average Mass [kg]</th>
+                        <th>Flighted</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ostrich</td>
+                        <td>104</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>Somali Ostrich</td>
+                        <td>90</td>
+                        <td>No</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+                We can have headers multiple columns large. You set them by adding the attributes rowspan and colspan.
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Animal</th>
+                        <th colspan="2">Average mass</th>
+                        <th rowspan="2">Flighted</th>
+                    </tr>
+                    <tr>
+                        <th>kg</th>
+                        <th>lb</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ostrich</td>
+                        <td>104</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>Somali Ostrich</td>
+                        <td>90</td>
+                        <td>No</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Forms</h1>
+    <p>
+        The "action" attribute tells where to send the data when the form is
+        submitted. We can use an HTTP request to sand the data.
+        The "method" attribute is used to define which kind of HTTP request to use.
+    </p>
+    <section>
+        <h2>Input element</h2>
+        <p>
+            The input element can be used to get 20+ input types, depending on the argument "type".
+            It does not have a closing tag. We have all the options on the MDN page.
+            We can define a placeholder.
+        </p>
+        <form action="/tacos">
+            <input type="text" placeholder="username">
+            <input type="password" placeholder="password  ">
+            <input type="color">
+            <input type="number">
+        </form>
+    </section>
+
+    <section>
+        <h2>Labels</h2>
+        <p>
+            Labels are elements that we associate to the input elements. They have two functions:
+        <ol>
+            <li>They provide some descriptive text to the input element</li>
+            <li>They are linked to the input element. A div wouldn't be, so it's better for accessibility</li>
+            <li>It allows to click on the label to select the input</li>
+        </ol>
+        We connect it to an input by giving the input an ID. Then we give the label an argument "for" with value
+        corresponding to the ID of the input.
+        </p>
+        <form action="/tacos">
+            <p>
+                <label for="username">Select a username</label>
+                <input type="text" placeholder="username" id="username">
+            </p>
+            <p>
+                <label for="password">Select a password</label>
+                <input type="password" placeholder="password" id="password">
+            </p>
+        </form>
+    </section>
+
+    <section>
+        <h2>Buttons</h2>
+        <p>
+            We can have buttons inside or outside of a form. When I have a button in a form it will submit the form when
+            clicked, by default. If I have them outside of the form it does nothing by default.
+            We can set the type of the button: if we set it to "button" instead of "submit" it does not submit.
+        </p>
+    </section>
+
+    <section>
+        <h2>Name attribute of forms</h2>
+        <p>The name attribute is the way we label inputs in our HTTP request.</p>
+        <form action="/tacos">
+            <label for="username">Type your username here</label>
+            <input type="text" name="username" id="username" placeholder="Username">
+        </form>
+    </section>
+
+    <section>
+        <h2>Other input types</h2>
+        <p>We have many other input types. The most common are:
+        <ul>
+            <li>checkbox: works like the others, but you can select if it is checked by default</li>
+            <li>
+                radio: is for radiobuttons. They are still y/n buttons, but in a group you can only have une checked.
+                You group them together by giving them the same name.
+                We <b>have</b> to add the argument "value" to tell te brawser what to send to the server, otherwise only
+                "on" is sent.
+            </li>
+            <li>range: creates a slider to select a value in a range</li>
+        </ul>
+        </p>
+        <form action="">
+            <div>
+                <input type="checkbox" name="pizza" id="pizza" checked>
+                <label for="pizza">Pizza</label>
+            </div>
+            <div>
+                <input type="checkbox" name="pasta" id="pasta">
+                <label for="pasta">Pasta</label>
+            </div>
+
+            <div>
+                <label for="s">S:</label>
+                <input type="radio" name="size" id="xs" value="s">
+                <label for="m">M:</label>
+                <input type="radio" name="size" id="m" value="m">
+                <label for="l">L:</label>
+                <input type="radio" name="size" id="l" value="l">
+            </div>
+
+            <div>
+                <label for="parmigiano">Quanto parmigiano?</label>
+                <input type="range" id="parmigiano" name="cheese" min="0" max="100">
+            </div>
+
+            <button type="submit">
+                Submit
+            </button>
+
+        </form>
+    </section>
+    <section>
+        <h2>The select element</h2>
+        <p>
+            This is not a type of input: it is another different element.
+            You use it to make a drop-menu. It is the combination of two elements: the
+            select element, which is the parent one, and the option elements.
+        </p>
+        <form action="">
+
+            <div>
+                <label for="pet_select">Choose a pet:</label>
+                <select name="pets" id="pet_select">
+                    <option value="">--Please choose an option--</option>
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                    <option value="hamster">Hamster</option>
+                </select>
+            </div>
+
+            <div>
+                <!-- We can have a pre-selected item -->
+                <label for="meal">Please select an Entree:</label>
+                <select name="meal" id="meal">
+                    <option value="veg" selected>Vegetarian</option>
+                    <option value="steak">Steak</option>
+                    <option value="fish">Fish</option>
+                </select>
+            </div>
+
+            <!-- inside of a form, the type="submit" is the default one. -->
+            <button>Submit</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Textarea</h2>
+        <p>This is a multiline input element, whee you can type text</p>
+        <form action="">
+            <div>
+                <label for="description"></label>
+                <textarea name="description" id="description" cols="30" rows="10"
+                    placeholder="Type something here"></textarea>
+            </div>
+            <button>Submit</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Forms validation</h2>
+        <p>
+            Validating user inputs: for example requiring that something is checked, or a valid password.
+            We can do it with JS, but there is also the built in validation in the browser.
+            We also have server-side validation: when we submit some data and we check, for example, if the username is
+            valid.
+            In built-in validation we can:
+        <ul>
+            <li>Set some inputs to "required", by adding this attribute. I can't submit if it is not set.</li>
+            <li>Set min and max len of text. For example a password</li>
+        </ul>
+
+        We have the possibility to add regex patterns to match.
+        Some elements have a default validation (it could be pattern matching).
+        For example I can set an input type to "email" and it will check if it matches an email pattern.
+        Or type="url" checks if it is a url. And you can set the url pattern.
+        </p>
+        <!-- We see built-in validation  -->
+
+        <form action="">
+
+            <p>
+                <label for="username">Enter your username</label>
+                <input type="text" name="username" id="username" required minlength="5" maxlength="20">
+            </p>
+
+        </form>
+
+    </section>
+
+</body>
+
+</html>

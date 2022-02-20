@@ -1,0 +1,14 @@
+h1 {
+    text-align: center;
+    text-decoration: orange wavy underline; 
+    letter-spacing: 12px;
+}
+
+a {
+    text-decoration: none;/* This can be used to remove a default underline */
+}
+
+p {
+    font-weight: 400;
+    line-height: 4; /* We need a unit: by default this multiplies the normal height */
+}

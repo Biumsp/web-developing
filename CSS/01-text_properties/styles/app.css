@@ -2,6 +2,8 @@ h1 {
     text-align: center;
     text-decoration: orange wavy underline; 
     letter-spacing: 12px;
+    font-size: 12px;
+    font-family: arial, sans-serif;
 }
 
 a {

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascade</title>
+</head>
+
+<body>
+
+    <h1>Cascade and Specificity</h1>
+
+    <h2>Order matters</h2>
+    <p>
+        In our css files, order matters. Also, if I link more style-sheets, the order I include them matters.
+    </p>
+
+    <h2>Specificity</h2>
+    <p>
+        What happens when you have more selectors selecting the same object?
+        Which one wins? When I have a conflict the most specific wins. And there is an actual formula for that: <br>
+        <b>ID > CLASS > ELEMENT</b>
+        IDs count like infinite to the second, classes like inf to the first, elements like infinite to the zero.
+        Anyway you can use a <a href="https://specificity.keegan.st/"> specificity calculator</a>.
+        pseudoclasses count as classes, pseudoelements count as elements.
+        This applies only when we have a conflict: if different properties are set in different blocks, no conflict
+        arises and they are all applied.
+    </p>
+
+    <h2>Inheritance</h2>
+    <p>
+        Some css properties will be inherited by child elements, if not set specifically.
+        Certain elements don't inherit by default.
+    </p>
+
+</body>
+
+</html>

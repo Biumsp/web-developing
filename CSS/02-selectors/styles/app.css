@@ -1,0 +1,51 @@
+* {
+    color: black;
+}
+
+h1, h2 {
+    background-color: antiquewhite;
+}
+
+button {
+    font-size: x-large;
+}
+
+#signup {
+    background-color: bisque;
+}
+
+.important {
+    font-weight: 100;
+}
+
+section.important button {
+    background-color: blueviolet;
+}
+
+p>button {
+    color: blue;
+}
+
+input[type="password"] {
+    background-color: brown;
+}
+
+button:hover {
+    background-color: blue;
+}
+
+button:active {
+    background-color: green;
+}
+
+h2::first-letter {
+    font-size: 50px;
+}
+
+p::first-line {
+    color:blue;
+}
+
+p::selection {
+    background-color: #dfcb74;
+}

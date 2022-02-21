@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <link rel="stylesheet" href="styles/app.css">
+</head>
+
+<body>
+
+    <h1>CSS Selectors</h1>
+    <p>
+    <ul>
+        <li>* : universal selector</li>
+        <li>element selector: selects all elements of a given type. Uses the html elements</li>
+        <li>You can use a comma as an "or" between to selectors</li>
+        <li>ID selectors: we can associate an ID (as an argument) to any element. To provide a hook for css to single
+            out a single element. You should have only one object for any ID
+            You wanna use as little ID as possible. Classes are better </li>
+        <li>class selector. A class is like an ID for multiple elements.
+            For example you can tag alla spans with a certain class.
+            It makes sense to give the parent elements classes and use the descendant selector to select things inside
+            of them.
+        </li>
+        <li>descendant selectors: a <b>space</b>. A space means that the second element i nested inside of the first
+        </li>
+        <li>adjacent combinator: the + is used to select elements on the same level, one after the other. Like
+            h2 + button</li>
+        <li>Direct descendant combinator: > is used to select an element that is directly nested inside of another. For
+            example li > a selects all anchor tags inside of a point-of-list element</li>
+        <li>Attribute selectors: allows us to select elements with a certain attribute set to a specific value.
+            It works like this: element[attribute="value"]
+            And you can use also fuzzier matches: with *= instead of the equal sign you get all the elements that have a
+            value for that element that contains the value we give.
+            Look at the MDN page.
+        </li>
+        <li>pseudo classes: they identify a state of an element. They all start with a column.
+            For example a:hover selects anchor tags that are being hovered over.
+            <ul>
+                <li>:hover</li>
+                <li>:active, for something that is currently being activated (a button that is clicked and held.</li>
+                <li>:checked</li>
+                <li>:n-th-of-type(mn), m is a number. n has to stay as letter.</li>
+            </ul>
+        </li>
+        <li>pseudo-elements. You define them wit :: <br>
+            They select a particular part of an element
+            <ul>
+                <li>::first-letter</li>
+                <li>::first-line</li>
+                <li>::selection applies to highlighted parts of elements</li>
+            </ul>
+        </li>
+    </ul>
+    </p>
+
+    <h2 class="important">An h2</h2>
+
+    <button id="signup">Sign Up</button>
+    <button>Click</button>
+
+    <section class="important">
+        <button>In Section</button>
+    </section>
+    <p>
+        <button>Inside of paragraph</button>
+    </p>
+
+    <input type="password">
+
+    <p>
+        We can already see it doesn' work for some elements.
+        It has to do with specificity.
+    </p>
+
+</body>
+
+</html>

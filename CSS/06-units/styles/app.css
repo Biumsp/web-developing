@@ -1,0 +1,11 @@
+div.percentage {
+    width: 200px;
+    height: 200px;
+    background-color: antiquewhite;
+}
+
+section.percentage {
+    background-color: aqua;
+    width: 50%;
+    height: 50%;
+}

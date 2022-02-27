@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <link rel="stylesheet" href="styles/app.css">
+</head>
+
+<body>
+
+    <h1>Box Model</h1>
+    <p>Inner content area</p>
+    <p>Padding</p>
+    <p>Border</p>
+    <p>Margin</p>
+
+    <p id="wh">We can change the width and height of the inner content area: the content box.</p>
+
+    <h2>Border and border-related properties</h2>
+    <div id="one">
+        The border is the border around an element.
+        The main properties are:
+        <ul>
+            <li>border-width</li>
+            <li>border-color</li>
+            <li>border-style</li>
+        </ul>
+        They HAVE to be ALL set. Otherwise you don't see anything.
+    </div>
+    <p id="two">This is the second one: you can style individually the sides of the border.</p>
+    <p id="three">
+        This is the third one. You can use one single property ("border") to select the width, style and color all at
+        once.
+    </p>
+
+    <p id="four">
+        We usually give border width with px because they are very thin and don't change with the page zoom.
+        The border width is added to the content area's. To change that we have to set <br>
+        box-sizing: border-box; Doing so, will make width select the overall width: content+border.
+    </p>
+
+    <h1>Padding</h1>
+    <p>
+        The space between the content and the border. Like border, we have the shorthand "padding" for all the sides at
+        once
+    </p>
+
+    <h2>Margin</h2>
+    <p>It's the space outsde of the border. The
+        body element has some default margin, just as all h1s. It is pretty common to set body {margin: 0;}, to avoid
+        this default margin.</p>
+
+    <button>One</button>
+    <button>Two</button>
+
+</body>
+
+</html>

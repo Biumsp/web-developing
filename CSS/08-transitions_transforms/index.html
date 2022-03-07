@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions and Transforms</title>
+    <link rel="stylesheet" href="styles/app.css">
+</head>
+
+<body>
+
+    <h1>Transitions and Transforms</h1>
+    <h2>Transitions</h2>
+    <p>
+        We can introduce transitions between changes in styles. You can specify the duration of the transition, its
+        timing function, its delay and the specific properties that will undergo that transitions in that way.
+        Even if I want everything to perform that transition, it is better to single-out the specific properties.
+    </p>
+
+    <div id="transition"></div>
+
+    <h2>Transforms</h2>
+    <p>
+        We can:
+    <ul>
+        <li>transform: rotate(45deg); Rotate of some degrees, or other units.</li>
+        <li>transform: scale(0.8); Scale to 80% along x and y</li>
+        <li>transform: translate(100px, -50px); translate in x and y directions</li>
+        <li>transform: skew(20deg); skew the element</li>
+    </ul>
+
+    We can change the transform origin. In rotations it changes the pin point.
+    The transform is applied to anything inside.
+    </p>
+
+    <div class="transforms">
+        <h2 class="transforms" id="rotate">Rotate Me!</h2>
+        <h2 class="transforms" id="scale">Scale Me!</h2>
+        <h2 class="transforms" id="translate">Translate Me!</h2>
+        <h2 class="transforms" id="skew">Skew Me!</h2>
+        <h2 class="transforms" id="rotate_scale">Rotate and Scale!</h2>
+        <h2 class="transforms" id="stretch">Stretch Me!</h2>
+
+        <section class="transforms">
+            <h2 class="transforms"></h2>
+            <h2 class="transforms"></h2>
+        </section>
+    </div>
+
+
+</body>
+
+</html>

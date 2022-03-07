@@ -1,0 +1,92 @@
+body {
+    background-color: #73D2DE;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: rgb(36, 23, 18);
+    border-bottom: 2px solid black;
+    padding-bottom: 0.67em;
+}
+
+div#transition {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(151, 80, 218);
+    border-radius: 50%;
+    border: 2px solid black;
+    transition: border-radius 800ms ease-out 200ms, background-color 500ms;
+    /* transition: property-name duration timing-function delay; */
+}
+
+div#transition:hover {
+    border-radius: 15%;
+    background-color: rgb(61, 128, 228);
+}
+
+div.transforms {
+    transform: translateY(100px);
+}
+
+h2.transforms {
+    width: 20%;
+    height: 2em;
+    line-height: 2em;
+
+    background-color: #FFBC42;
+    color: #8F2D56;
+
+    font-weight: 300;
+    font-family: 'Lucida Sans', Verdana, sans-serif;
+    text-align: center;
+
+    margin: 20px auto; /* Centered horizontally and 20 px of vertical margin */ 
+    border: 2px solid black;
+}
+
+h2.transforms:nth-of-type(2n) {
+    background-color: #D81159;
+    color: antiquewhite;
+}
+
+h2.transforms:nth-of-type(3n) {
+    background-color: #8F2D56;
+    color: antiquewhite;
+}
+
+h2.transforms:nth-of-type(4n) {
+    background-color: #218380;
+}
+
+h2.transforms#rotate {
+    transform: rotate(-12deg);
+    transform-origin: top left;
+}
+
+h2.transforms#scale {
+    transform: scale(0.6);  /* We can also scale differently*/
+}
+
+h2.transforms#translate {
+    transform: translateX(-50px);
+}
+
+h2.transforms#skew {
+    transform: skew(20deg);
+}
+
+h2.transforms#rotate_scale {
+    font-size: 1em;
+    transform: rotate(20deg) scale(0.6);
+}
+
+h2.transforms#stretch {
+    transform: scaleX(1.5);
+}
+
+section.transforms {
+    transform: rotate(30deg) translateY(100px);;
+}

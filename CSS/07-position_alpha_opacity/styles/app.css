@@ -11,6 +11,9 @@ section:nth-of-type(2) {
     height:200px;
     background-color: rgb(64, 231, 48);
     border: 2px solid black;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
 }
 
 #rgba_1 {

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Playground</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <h1>Let's Play With Flexbox</h1>
+
+    <p>
+        It it an ensamble of tools used to layout elements. First of all there is he property display, and we can set it
+        to flex, to activate the flexbox model.
+        When we enable the flexbox model we get a main axis, along which our elements flow. The default is an
+        horizontal, left-to-right axis. But we can change it using flex-direction:, with values row, row-reverse,
+        column, column-reverse.
+
+        Another important property is justify-content:, the default being left-start (when the main axis goes from left
+        to right). Or flex-end, center, space-between (distributes the excess space between the elements, but not
+        between them and the container), space-around (gives each element the same space around), space-evenly (ensures
+        that the space is evenly distributed between elements and elements-container).
+
+        Another property is flex-wrap:, with values wrap or wrap-reverse. If set, when elements are bigger than the
+        container, instead of being squashed, they are spread along the cross axis (the one that is not the main axis),
+        in a new column or row. Wrap and wrap reverse determine the direction of the cross-axis. The default value is
+        flex-wrap: nowrap;
+
+        Justify-content was to distribute space along the main axis. Now we have to distribute space along the
+        cross-axis. It is align-items: <br>
+        It has flex-start (alligns to the start of the cross-axis), flex-end, center (at the center of the cross axis),
+        baseline (aligned to the baseline of the inner text (the baseline is the line through the bottom of each
+        letter)).
+
+        Align-content is to distribute space between the elements, along the cross axis. If we are in flex-direction:
+        column; and we have flex-wrap set, we will get many columns if our items overflow. Those columns are divided by
+        some space. This space disposition is determined by the value of align-content. With values space-between,
+        center, space-around...
+
+        In the flex container we can also apply a property to a single element: align-self. It has the same values, but
+        we set it for a single element.
+    </p>
+
+    <section id="container">
+        <div style="background-color: #80ffdb"></div>
+        <div style="background-color: #64dfdf"></div>
+        <div style="background-color: #48bfe3"></div>
+        <div style="background-color: #5390d9"></div>
+        <div style="background-color: #6930c3"></div>
+    </section>
+
+</body>
+
+</html>

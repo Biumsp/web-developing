@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Sizing</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <h1>Flex Sizing Properties</h1>
+    <p>
+        Flex sizing properties are used to make the elements adapt to the available space around them. We look at three
+        properties for individual items in a flex container: <br>
+    <ul>
+        <li>
+            flex-basis: the initial size, before is added into are self container. It is the initial size along the
+            main-axis
+        </li>
+        <li>
+            flex-grow: distributes the available space between the elements with this property set. They grow and get to
+            occupy a portion of the available space that is given by the fraction of their value, divided by the sum of
+            the values of all the elements. I.e., if you give one element flex-grow: 1; and the other flex-grow: 2; the
+            second one will eat up twice as much the space of first one
+        </li>
+        <li></li>
+    </ul>
+    </p>
+
+    <h2>Flex-basis</h2>
+
+    <section id="flex-basis">
+        <section id="row" class="flex">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+
+        <section id="column" class="flex">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+    </section>
+
+    <h2>Flex-grow</h2>
+
+    <section id="flex-grow">
+        <section class="flex">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+
+        <section class="flex" id="grow_all">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+
+        <section class="flex">
+            <div id="grow"></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+
+        <section class="flex" id="distributed">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+    </section>
+</body>
+
+</html>

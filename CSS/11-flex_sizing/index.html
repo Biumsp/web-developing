@@ -23,7 +23,8 @@
             flex-grow: distributes the available space between the elements with this property set. They grow and get to
             occupy a portion of the available space that is given by the fraction of their value, divided by the sum of
             the values of all the elements. I.e., if you give one element flex-grow: 1; and the other flex-grow: 2; the
-            second one will eat up twice as much the space of first one
+            second one will eat up twice as much the space of first one. If flex-wrap is enabled, this happens at every
+            new line/column.
         </li>
         <li></li>
     </ul>
@@ -31,8 +32,8 @@
 
     <h2>Flex-basis</h2>
 
-    <section id="flex-basis">
-        <section id="row" class="flex">
+    <section id="flex-basis" class="flex">
+        <section id="row">
             <div></div>
             <div></div>
             <div></div>
@@ -40,7 +41,7 @@
             <div></div>
         </section>
 
-        <section id="column" class="flex">
+        <section id="column">
             <div></div>
             <div></div>
             <div></div>
@@ -51,8 +52,8 @@
 
     <h2>Flex-grow</h2>
 
-    <section id="flex-grow">
-        <section class="flex">
+    <section id="flex-grow" class="flex">
+        <section>
             <div></div>
             <div></div>
             <div></div>
@@ -60,7 +61,7 @@
             <div></div>
         </section>
 
-        <section class="flex" id="grow_all">
+        <section id="grow_all">
             <div></div>
             <div></div>
             <div></div>
@@ -68,7 +69,7 @@
             <div></div>
         </section>
 
-        <section class="flex">
+        <section>
             <div id="grow"></div>
             <div></div>
             <div></div>
@@ -76,7 +77,15 @@
             <div></div>
         </section>
 
-        <section class="flex" id="distributed">
+        <section id="distributed">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+
+        <section class="wrap">
             <div></div>
             <div></div>
             <div></div>

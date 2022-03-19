@@ -24,10 +24,18 @@
             occupy a portion of the available space that is given by the fraction of their value, divided by the sum of
             the values of all the elements. I.e., if you give one element flex-grow: 1; and the other flex-grow: 2; the
             second one will eat up twice as much the space of first one. If flex-wrap is enabled, this happens at every
-            new line/column.
+            new line/column. We can set a max-width.
         </li>
-        <li></li>
+        <li>
+            flex-shrink: it's the same. It determines how much elements shrink when there is'n enough space.
+            Just like flex-grow, the default value is 1. We can set a min-width to avoid that it shrinks over a certain
+            point.
+        </li>
     </ul>
+    </p>
+    <p>
+        There is a shorthand: flex. This property allows to set all three values at once. In order they are flex-grow,
+        flex-shrink, flex-basis.
     </p>
 
     <h2>Flex-basis</h2>

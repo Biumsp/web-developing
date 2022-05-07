@@ -1,0 +1,82 @@
+body {
+    background-color: #B8B8FF;
+}
+
+main {
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    margin-top: 2em;
+
+    background-color: #FFEEDD;
+
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+img {
+    width: 100%;
+    height: 300px;
+
+    border-radius: 10px 10px 0 0;
+
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-top: 0;
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+
+    border-bottom: 1px solid black;
+}
+
+section.score {
+    padding-bottom: 0.5em;
+}
+
+section.score p.score {
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+
+    display: block;
+    text-align: center;
+}
+
+button {
+    padding: 0.25em 1em;
+    border-radius: 5px;
+
+    border: 2px solid black;
+
+    font-weight: 400;
+    font-size: 1.5rem;
+    display: inline-block;
+}
+
+span#max_score {
+    width: 2em;
+}
+
+button.score_1 {
+    background-color: #559cd1;
+}
+
+button.score_2 {
+    background-color: #ded064;
+}
+
+button#reset {
+    background-color: #c03f3f;
+}
+
+span.winner {
+    color: green;
+}
+
+span.loser {
+    color: red;
+}

@@ -1,0 +1,71 @@
+:root {
+    --black: #242325;
+    --brown: #A1674A;
+    --white: #F6F4F3;
+    --green: #90B494;
+    --blue:  #56A3A6;
+}
+
+body {
+    background-color: var(--black);
+}
+
+nav#mainNav a {
+    font-family: "Nunito", sans-serif;
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+nav#mainNav .nav-link {
+    color: white;
+}
+
+nav#mainNav .nav-link:hover {
+    color: var(--green);
+}
+
+nav#mainNav button.navbar-toggler:hover {
+    transform: translateY(-1px);
+}
+
+nav#mainNav button.navbar-toggler:focus {
+    outline: 1px solid white;
+}
+
+nav#mainNav .navbar-brand {
+    color: var(--white);
+}
+
+div.info-text {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+p.info-text {
+    color: var(--white);
+    width: 80%;
+}
+
+@media (max-width: 991.5px) {
+
+    nav#mainNav a {
+        font-family: "Nunito", sans-serif;
+        font-weight: 300;
+        font-size: 1.5rem;
+    }
+
+    nav#mainNav .navbar-brand {
+        color: white;
+    }
+
+    nav#mainNav .nav-link {
+        width: 20%;
+    }
+
+}
+
+
+
+
